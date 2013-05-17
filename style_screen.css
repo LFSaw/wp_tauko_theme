@@ -33,7 +33,7 @@ li { list-style: none;
 .main-navigation { height: 40px;
 		 }
 
-.tauko_box {
+/*.tauko_box {
     background-color: #fff;
     padding: 40px;
     margin:   9.3px;
@@ -41,7 +41,29 @@ li { list-style: none;
     border: 1.1px dashed #000;
     border-radius: 1.5px;
     display: inline-block;
+}*/
+.tauko_box_inner {
+   background-color: #fff;
+   padding: 40px;
+   margin:   9.3px;
+   line-height: 1.4em;
+   border: 1.1px dashed #000;
+   border-radius: 1.5px;
+   display: inline-block;
 }
+.tauko_box_head {
+   position: relative;
+   font-size:80%;
+   margin-top:-20px;
+   width: 150px;
+   margin-left:20px;
+   padding-left:5px;
+   /*border: 1.1px solid #000;*/
+   color: #fff;
+   background-color:#fff;
+}
+
+
 
 div.nav_menu { display: block;
 	       position: absolute;
