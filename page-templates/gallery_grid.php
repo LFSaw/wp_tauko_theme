@@ -36,17 +36,24 @@ $count = 0;
 							  array('class' => "attachment-$size tauko_box-picture"));
 			if  (++$count > 1 && !$content_put) {
 				if (rand(0,1)) {
-					tauko_box($content, array( 'class' => 'gallery_text', 'color' => get_page_color( get_the_ID()) ));
+					tauko_box($content, array( 'class' => 'gallery_text', 
+					                           'color' => get_page_color( get_the_ID() )));
 					$content_put = true;
 				}
 			}
 			if ( count($pages) == 1 && !$content_put) {
-				tauko_box($img_str, array( 'link_href' => get_permalink($page->ID ), 'color' => get_page_color( get_the_ID() )));
+				tauko_box($img_str, array( 'link_href' => get_permalink($page->ID ), 
+				                           'color' => get_page_color( get_the_ID() ),
+							   'title' => get_the_title($page->ID)
+  				                         ));
 				tauko_box($content, array( 'class' => 'gallery_text', 'color' => get_page_color( get_the_ID()) ));
 				$content_put = true;
 				continue;
 			}
-			tauko_box($img_str, array( 'link_href' => get_permalink($page->ID ), 'color' => get_page_color( get_the_ID() )));
+			tauko_box($img_str, array( 'link_href' => get_permalink($page->ID ), 
+			                           'color' => get_page_color( get_the_ID() ),
+				                   'title' => get_the_title($page->ID)
+						   ));
 		}
 	} else {
 		tauko_box($content, array( 'class' => 'gallery_text', 'color' => get_page_color( get_the_ID()) ));

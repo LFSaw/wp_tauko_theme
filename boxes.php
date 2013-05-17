@@ -1,33 +1,13 @@
 <?php
 
-function tauko_boxes( $posts ) {
-	if ( empty($posts) )
-		return;
-
-	$posts = priority_sort($posts);
-
-	echo "<div id=\"tauko_boxes\">";
-	$count = 0;
-
-		foreach ( $posts as $post ) {
-			
-?>
-		<a href="<?php echo get_permalink( $post->ID ); ?>">
-		  <div class="tauko_box" style="border-color: <?php echo get_page_color( $post->ID ); ?>;">
-				<?php echo get_the_post_thumbnail($post->ID, array(200, 9999), array(
-		    'class' => "attachment-$size tauko_box-picture"
-		    )); ?>
-		  </div>
-		</a>
-	       <?php
-	       }
-		echo "</div>";
-}
-
 function tauko_box( $content, $settings = array() )
 {
 	if ( empty($content) )
 		return;
+	if ( isset($settings['title']))
+		$content .= sprintf("\n<span class=\"tauko_box_head\" style=\"background-color: %s\">%s</span>",
+			(isset($settings['color'])) ? $settings['color'] : get_page_color(get_the_ID()),
+			$settings['title']);
 
 	$style = '';
 	if ( !isset($settings['color']) )
