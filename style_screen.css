@@ -69,13 +69,17 @@ div.nav_menu ul { list-style-type: none;
 		  position: relative;
 		}
 
+div.nav_menu a {
+	display: block;
+    padding: 10px 12px 12px 12px;
+    height: 21px;
+}
 /* General nav */
 div.nav_menu ul li {
     font-size: 12px;
     display: inline-block;
     list-style-type: none;
     float: left;
-    padding: 10px 12px 8px 12px;
     z-index: 1000;
     overflow: visible;
     white-space: nowrap;
@@ -84,7 +88,7 @@ div.nav_menu ul li {
 /*Top nav*/
 div.nav_menu > ul > li {
     width: 115px;
-    height: 21px;
+    height: 40px;
     text-align: center;
     margin-right: 5px;
 }
@@ -92,10 +96,10 @@ div.nav_menu > ul > li {
 /*First children*/
 div.nav_menu ul.children li { position: relative;
 		    text-align: left;
-		    top: 10px;
-		    left: -52px;
+		    top: -3px;
+		    left: -40px;
 		    visibility: hidden;
-		    width: 220px;
+		    width: 227px;
 }
 
 div.nav_menu li:hover > ul.children > li {
