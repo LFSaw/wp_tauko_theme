@@ -5,7 +5,8 @@ function tauko_box( $content, $settings = array() )
 	if ( empty($content) )
 		return;
 	if ( isset($settings['title']))
-		$content .= sprintf("\n<span class=\"tauko_box_head\" style=\"background-color: %s\">%s</span>",
+		$content .= sprintf("\n<span class=\"tauko_box_head\" style=\"color: %s; border-color: %s;\">%s</span>",
+			(isset($settings['color'])) ? $settings['color'] : get_page_color(get_the_ID()),
 			(isset($settings['color'])) ? $settings['color'] : get_page_color(get_the_ID()),
 			$settings['title']);
 

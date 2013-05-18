@@ -9,6 +9,9 @@ a { text-decoration: none;
     color: #73A7C1;
 }
 
+/* IE shit */
+a img {border: 1px solid #ffffff;} 
+
 ul { list-style: none;
 }
 
@@ -51,7 +54,7 @@ li { list-style: none;
    font-size:80%;
    width: 150px;
    padding-left:5px;
-   /*border: 1.1px solid #000;*/
+   border: 1.1px dashed #000;
    color: #fff;
    background-color:#fff;
 }
@@ -68,10 +71,11 @@ div.nav_menu ul { list-style-type: none;
 
 /* General nav */
 div.nav_menu ul li {
+    font-size: 12px;
     display: inline-block;
     list-style-type: none;
     float: left;
-    padding: 10px 12px;
+    padding: 10px 12px 8px 12px;
     z-index: 1000;
     overflow: visible;
     white-space: nowrap;
@@ -80,7 +84,7 @@ div.nav_menu ul li {
 /*Top nav*/
 div.nav_menu > ul > li {
     width: 115px;
-    height: 25px;
+    height: 21px;
     text-align: center;
     margin-right: 5px;
 }
@@ -91,7 +95,7 @@ div.nav_menu ul.children li { position: relative;
 		    top: 10px;
 		    left: -52px;
 		    visibility: hidden;
-		    width: 280px;
+		    width: 220px;
 }
 
 div.nav_menu li:hover > ul.children > li {
