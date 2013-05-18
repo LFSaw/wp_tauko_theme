@@ -7,7 +7,7 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
-    <title><?php wp_title( '|', true, right); ?></title>
+    <title><?php bloginfo('name');?></title>
     <link rel="stylesheet" media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style_screen.css" />
     <link rel="stylesheet" media="handheld" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style_mobile.css" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.gif" />
