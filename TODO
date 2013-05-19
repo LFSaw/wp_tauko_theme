@@ -1,1 +1,26 @@
-* Fill in TODO and README
+* General
+** Fill in TODO and README
+** General cleanups (so everything doesn't seem so code-n-run)
+** Create 404-page (404.php)
+** Create image sizes for lightbox images.
+** The way the home icon is added has a kind of hackish feel to it.
+** More consistent way of using echo "<html>"; and <a href="<?php test();?>">
+** There is no error logging anywhere.
+* page_priority
+** Create an admin view for better page_priority management
+** Remove redundant/pointless _page_priority attribute, and use only menu_order
+* js
+** Do we really need to include jquery by ourselves? Does wp provide some way to do that?
+** Move isotope reload/redraw function to its own javascript file
+* css
+** Move isotope css to its own file.
+** Maybe remove style_mobile? Or at the very least, gather all common css to style.css file.
+* page_color
+** Verify user input when color is added
+** Add somekind of heuristic to page_color_alt_shade() so that it can dedice wether to darken or lighten the shade. Or maybe a parameter option.
+* boxes
+** DONE - tauko_boxes() is pointless/harmful.
+* page-templates
+** Content grids
+*** Content grids are redundant (basically the same thing is written twice, with minor variations). Should make the text box visibility controlled by a variable, and then just toggle that variable for gallery + text.
+*** Content grids are horribly code-n-run.
