@@ -20,4 +20,7 @@
 
 <?php wp_footer(); ?>
 </div><!--/jelly-->
+<div class="footeradress">
+WE SPEAK THE FUNNY LANGUAGE OF RESPONSIBLE FASHION &mdash; KANAVARANTA 15, HELSINKI &mdash; OPEN WED-FRI 11-18, SAT 11-16
+</div>
 </body>
